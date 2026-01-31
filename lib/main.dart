@@ -16,6 +16,7 @@ class MainApp extends StatelessWidget {
         appBar: AppBar(
           leading: const Icon(Icons.arrow_back_ios_new_rounded),
           actions: const [Icon(Icons.ios_share_rounded)],
+          backgroundColor: Colors.white,
         ),
         body: Column(
           children: [
@@ -34,7 +35,7 @@ class MainApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
                       Text(
-                        "Naturel Red Apple",
+                        "Natural Red Apple",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
@@ -47,7 +48,12 @@ class MainApp extends StatelessWidget {
                   const SizedBox(height: 6),
                   const Text(
                     "1kg, price \$4.99",
-                    style: TextStyle(fontSize: 16, height: 1.3),
+                    style: TextStyle(
+                      fontSize: 16,
+                      height: 1.3,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const SizedBox(height: 12),
                   Row(
